@@ -1,2 +1,2 @@
 # A-B-esolang-py
-使用Python3实现的游戏`A=B`内语言的解释器
+使用Python3实现的[游戏A=B](https://store.steampowered.com/app/1720850/AB/)内语言的解释器
