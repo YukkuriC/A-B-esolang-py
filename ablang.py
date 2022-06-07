@@ -154,16 +154,13 @@ class RuleSet:
 
 
 if __name__ == '__main__':
-    subrule = RuleSet('''
+    explainer = RuleSet('''
     (start)ooonnn=(end)C
     (start)true=(end)-true-
     (start)oonn=(end)B
     (start)on=(end)A
     (start)no=(end)'
     ''')
-
-    def descrip(s):
-        return subrule.execute(s, False)
 
     rs = RuleSet('''
     aa=ononnoa
@@ -181,7 +178,7 @@ if __name__ == '__main__':
     trueo=o
     on=
     no=false''')
-    c = Context('abba', descrip)
+    c = Context('abba', explainer.execute)
 
     print('Rules:')
     print(rs, '\n')
